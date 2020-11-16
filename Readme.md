@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Казбек Епхиев](https://up.htmlacademy.ru/adaptive/21/user/186928).
-* Наставник: `Неизвестно`.
+* Наставник: [Светлана Блинова](https://htmlacademy.ru/profile/id1432187).
 
 ---
 
