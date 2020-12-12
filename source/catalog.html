@@ -89,50 +89,55 @@
     </div>
   </header>
   <main class="main">
-    <h1 class="main__header">Попутчики</h1>
+    <h1 class="main__title">Попутчики</h1>
     <p class="country-filter">Фильтрация по странам:</p>
-    <form class="companion-preferences" action="https://echo.htmlacademy.ru" method="POST" id="find-companion">
-      <header class="companion-preferences__header">
+    <form class="filters" action="https://echo.htmlacademy.ru" method="POST" id="find-companion">
+      <header class="filters__header">
         Подберите идеального попутчика
       </header>
-      <section class="companion-preferences__hobbie ">
-        <p class="companion-preferences__section-header">ХОББИ</p>
+      <section class="filters__subtitle">
+        <h2 class="visually-hidden">Хобби</h2>
+        <p class="filters__section-header">ХОББИ</p>
       </section>
-      <section class="companion-preferences__music ">
-        <p class="companion-preferences__section-header">МУЗЫКА</p>
-        <input сlass="companion-preferences__music-checkbox" type="checkbox" name="heavy-rock" checked><span>Тяжелый
+      <section class="filters__subtitle">
+        <h2 class="visually-hidden">Музыка</h2>
+        <p class="filters__section-header">МУЗЫКА</p>
+        <input class="filters__filter-checkbox" type="checkbox" name="heavy-rock" checked><span>Тяжелый
           рок</span>
-        <input сlass="companion-preferences__music-checkbox" type="checkbox" name="russian-rap" checked><span>Русский
+        <input class="filters__filter-checkbox" type="checkbox" name="russian-rap" checked><span>Русский
           рэп</span>
-        <input сlass="companion-preferences__music-checkbox" type="checkbox" name="euro-dance"><span>Евроденс</span>
+        <input class="filters__filter-checkbox" type="checkbox" name="euro-dance"><span>Евроденс</span>
       </section>
-      <section class="companion-preferences__food">
-        <p class="companion-preferences__section-header">ЕДА</p>
+      <section class="filters__subtitle">
+        <h2 class="visually-hidden">Еда</h2>
+        <p class="filters__section-header">ЕДА</p>
       </section>
-      <section class="companion-preferences__transport ">
-        <p class="companion-preferences__section-header">ТРАНСПОРТ</p>
-        <input сlass="companion-preferences__transport-checkbox" type="checkbox" name="airplain" checked>
-        <input сlass="companion-preferences__transport-checkbox" type="checkbox" name="bus" checked>
-        <input сlass="companion-preferences__transport-checkbox" type="checkbox" name="bicycle">
-        <input сlass="companion-preferences__transport-checkbox" type="checkbox" name="foot" checked>
+      <section class="filters__subtitle">
+        <h2 class="visually-hidden">Транспорт</h2>
+        <p class="filters__section-header">ТРАНСПОРТ</p>
+        <input class="filters__filter-checkbox" type="checkbox" name="airplain" checked>
+        <input class="filters__filter-checkbox" type="checkbox" name="bus" checked>
+        <input class="filters__filter-checkbox" type="checkbox" name="bicycle">
+        <input class="filters__filter-checkbox" type="checkbox" name="foot" checked>
       </section>
-      <section class="companion-preferences__level">
-        <p class="companion-preferences__section-header">ЛЕВЕЛ</p>
-        <input class="companion-preferences__level-min" type="number" value="30" min="0" max="100">
-        <input class="companion-preferences__level-max" type="number" value="100" min="0" max="100">
+      <section class="filters__level">
+        <h2 class="visually-hidden">Левел</h2>
+        <p class="filters__section-header">ЛЕВЕЛ</p>
+        <input class="filters__level-min" type="number" value="30" min="0" max="100">
+        <input class="filters__level-max" type="number" value="100" min="0" max="100">
       </section>
-      <div class="companion-preferences__slider">
+      <div class="filters__slider">
         <div>
         </div>
         <div>
         </div>
       </div>
-      <button class="companion-preferences__button" type="submit">ПОКАЗАТЬ</button>
+      <button class="button button--show" type="submit">ПОКАЗАТЬ</button>
     </form>
     <section class="user-cards">
       <div class="user-card">
         <img class="user-card__photo" src="https://placekitten.com/70/70" alt="User photo" width="70" height="70" />
-        <h3 class="user-card__user-name">Таня Фирсова</h3>
+        <h3 class="user-card__name">Таня Фирсова</h3>
         <div class="user-card__online-status">
 
         </div>
@@ -141,7 +146,7 @@
             width="31" height="31">
           <span class="user-card__likes-number">1,5 М</span>
         </div>
-        <p class="user-card__user-hobbies">
+        <p class="user-card__hobbies">
           #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
         </p>
         <ul class="user-card__countries-to-visit">
@@ -231,11 +236,11 @@
           </svg>
           <span class="mark-level__progress-value" data-level-value="99">99</span>
         </div>
-        <button class="call-user" type="button">ПОЗВАТЬ</button>
+        <button class="button button--call" type="button">ПОЗВАТЬ</button>
       </div>
       <div class="user-card">
         <img class="user-card__photo" src="https://placekitten.com/70/70" alt="User photo" width="70" height="70" />
-        <h3 class="user-card__user-name">Петя Демин</h3>
+        <h3 class="user-card__name">Петя Демин</h3>
         <div class="user-card__online-status">
 
         </div>
@@ -244,7 +249,7 @@
             width="31" height="31">
           <span class="user-card__likes-number">1500</span>
         </div>
-        <p class="user-card__user-hobbies">
+        <p class="user-card__hobbies">
           #бургер #бар #футбол #концерт #крафт
         </p>
         <ul class="user-card__countries-to-visit">
@@ -269,7 +274,7 @@
                   fill="" />
               </g>
               <defs>
-                <clipPath id="clip0">
+                <clipPath id="clip0_1">
                   <rect width="20.8265" height="21.12" fill="white" transform="translate(0 0.959961)" />
                 </clipPath>
               </defs>
@@ -284,7 +289,7 @@
                   fill="" />
               </g>
               <defs>
-                <clipPath id="clip1">
+                <clipPath id="clip1_1">
                   <rect width="17.0398" height="19.2" fill="white" transform="translate(0.0795898 0.919922)" />
                 </clipPath>
               </defs>
@@ -330,12 +335,12 @@
           </svg>
           <span class="mark-level__progress-value" data-level-value="80">80</span>
         </div>
-        <button class="call-user" type="button">ПОЗВАТЬ</button>
+        <button class="button button--call" type="button">ПОЗВАТЬ</button>
 
       </div>
       <div class="user-card">
         <img class="user-card__photo" src="https://placekitten.com/70/70" alt="User photo" width="70" height="70" />
-        <h3 class="user-card__user-name">Марк Смолов</h3>
+        <h3 class="user-card__name">Марк Смолов</h3>
         <div class="user-card__online-status">
         </div>
         <div class="user-card__likes">
@@ -343,7 +348,7 @@
             width="31" height="31">
           <span class="user-card__likes-number">170</span>
         </div>
-        <p class="user-card__user-hobbies">
+        <p class="user-card__hobbies">
           #рэп #тату #хайпбист #кроссовки #суприм
         </p>
         <ul class="user-card__countries-to-visit">
@@ -372,7 +377,7 @@
                   fill="" />
               </g>
               <defs>
-                <clipPath id="clip0">
+                <clipPath id="clip0_2">
                   <rect width="20.8265" height="21.12" fill="white" transform="translate(0 0.959961)" />
                 </clipPath>
               </defs>
@@ -387,7 +392,7 @@
                   fill="" />
               </g>
               <defs>
-                <clipPath id="clip1">
+                <clipPath id="clip1_2">
                   <rect width="17.0398" height="19.2" fill="white" transform="translate(0.0795898 0.919922)" />
                 </clipPath>
               </defs>
@@ -430,12 +435,12 @@
           </svg>
           <span class="mark-level__progress-value" data-level-value="25">25</span>
         </div>
-        <button class="call-user" type="button">ПОЗВАТЬ</button>
+        <button class="button button--call" type="button">ПОЗВАТЬ</button>
 
       </div>
       <div class="user-card">
         <img class="user-card__photo" src="https://placekitten.com/70/70" alt="User photo" width="70" height="70" />
-        <h3 class="user-card__user-name">Лариса Роговая</h3>
+        <h3 class="user-card__name">Лариса Роговая</h3>
         <div class="user-card__online-status">
         </div>
         <div class="user-card__likes">
@@ -443,7 +448,7 @@
             width="31" height="31">
           <span class="user-card__likes-number">23</span>
         </div>
-        <p class="user-card__user-hobbies">
+        <p class="user-card__hobbies">
           #образование #карьера #учеба #линкедин
         </p>
         <ul class="user-card__countries-to-visit">
@@ -468,7 +473,7 @@
                   fill="" />
               </g>
               <defs>
-                <clipPath id="clip0">
+                <clipPath id="clip0_3">
                   <rect width="20.8265" height="21.12" fill="white" transform="translate(0 0.959961)" />
                 </clipPath>
               </defs>
@@ -483,7 +488,7 @@
                   fill="" />
               </g>
               <defs>
-                <clipPath id="clip1">
+                <clipPath id="clip1_3">
                   <rect width="17.0398" height="19.2" fill="white" transform="translate(0.0795898 0.919922)" />
                 </clipPath>
               </defs>
@@ -526,7 +531,7 @@
           </svg>
           <span class="mark-level__progress-value" data-level-value="50">50</span>
         </div>
-        <button class="call-user" type="button">ПОЗВАТЬ</button>
+        <button class="button button--call" type="button">ПОЗВАТЬ</button>
       </div>
     </section>
     <button class="show-more" type="button">ПОКАЗАТЬ ЕЩЕ</button>
