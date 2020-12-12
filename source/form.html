@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
-  <title>Form</title>
+  <title>Направления</title>
 </head>
 
 <body class="page__body">
@@ -89,7 +89,7 @@
     </div>
   </header>
   <main class="main">
-    <h1 class="main__header">Направление</h1>
+    <h1 class="main__title">Направления</h1>
     <section class="profile-settings">
       <div class="user-card">
         <div class="mark-level">
@@ -270,48 +270,56 @@
             height="24" />
           <input class="plans-step__choose-country" type="text" placeholder="ВЫБЕРИТЕ СТРАНУ" id="country3" />
           <div class="countries-block">
-            <h4 class="countries-block header">Выберите страну</h4>
-            <ul class="countries-block__letters-list">
-              <li class="countries-block__letter countries-block__letter--selected">
-                А
-              </li>
-              <li class="countries-block__letter">Б</li>
-              <li class="countries-block__letter">В</li>
-              <li class="countries-block__letter">Г</li>
-              <li class="countries-block__letter">Д</li>
-              <li class="countries-block__letter">Е</li>
-              <li class="countries-block__letter">З</li>
-              <li class="countries-block__letter">И</li>
-              <li class="countries-block__letter">К</li>
-              <li class="countries-block__letter">Л</li>
-              <li class="countries-block__letter">М</li>
-              <li class="countries-block__letter">Н</li>
-              <li class="countries-block__letter">О</li>
-              <li class="countries-block__letter">П</li>
-              <li class="countries-block__letter">Р</li>
-              <li class="countries-block__letter">С</li>
-              <li class="countries-block__letter">Т</li>
-              <li class="countries-block__letter">У</li>
-              <li class="countries-block__letter">Ф</li>
-              <li class="countries-block__letter">Х</li>
-              <li class="countries-block__letter">Ц</li>
-              <li class="countries-block__letter">Ш</li>
-              <li class="countries-block__letter">Э</li>
-              <li class="countries-block__letter">Ю</li>
-              <li class="countries-block__letter">Я</li>
-            </ul>
-            <ul class="countries-block__countries-list visually-hidden">
-              <li class="countries-block__country">Австралия</li>
-              <li class="countries-block__country">Австрия</li>
-              <li class="countries-block__country">Азербайджан</li>
-              <li class="countries-block__country">Албания</li>
-              <li class="countries-block__country">Алжир</li>
-              <li class="countries-block__country">Ангола</li>
-              <li class="countries-block__country">Андорра</li>
-              <li class="countries-block__country">Антигуа и Барбуда</li>
-              <li class="countries-block__country">Аргентина</li>
-              <li class="countries-block__country">Армения</li>
-              <li class="countries-block__country">Афганистан</li>
+            <h4 class="countries-block__header">Выберите страну</h4>
+            <table class="letters-table visually-hidden">
+              <tr>
+                <td class="letters-table__letter letters-table__letter--selected">А</td>
+                <td class="letters-table__letter">Б</td>
+                <td class="letters-table__letter">В</td>
+                <td class="letters-table__letter">Г</td>
+                <td class="letters-table__letter">Д</td>
+              </tr>
+              <tr>
+                <td class="letters-table__letter">Е</td>
+                <td class="letters-table__letter">З</td>
+                <td class="letters-table__letter">И</td>
+                <td class="letters-table__letter">К</td>
+                <td class="letters-table__letter">Л</td>
+              </tr>
+              <tr>
+                <td class="letters-table__letter">М</td>
+                <td class="letters-table__letter">Н</td>
+                <td class="letters-table__letter">О</td>
+                <td class="letters-table__letter">П</td>
+                <td class="letters-table__letter">Р</td>
+              </tr>
+              <tr>
+                <td class="letters-table__letter">С</td>
+                <td class="letters-table__letter">Т</td>
+                <td class="letters-table__letter">У</td>
+                <td class="letters-table__letter">Ф</td>
+                <td class="letters-table__letter">Х</td>
+              </tr>
+              <tr>
+                <td class="letters-table__letter">Ч</td>
+                <td class="letters-table__letter">Ш</td>
+                <td class="letters-table__letter">Э</td>
+                <td class="letters-table__letter">Ю</td>
+                <td class="letters-table__letter">Я</td>
+              </tr>
+            </table>
+            <ul class="countries-list visually-hidden">
+              <li class="countries-list__item">Австралия</li>
+              <li class="countries-list__item">Австрия</li>
+              <li class="countries-list__item">Азербайджан</li>
+              <li class="countries-list__item">Албания</li>
+              <li class="countries-list__item">Алжир</li>
+              <li class="countries-list__item">Ангола</li>
+              <li class="countries-list__item">Андорра</li>
+              <li class="countries-list__item">Антигуа и Барбуда</li>
+              <li class="countries-list__item">Аргентина</li>
+              <li class="countries-list__item">Армения</li>
+              <li class="countries-list__item">Афганистан</li>
             </ul>
           </div>
           <input class="plans-step__choose-country" type="text" placeholder="ДОБАВИТЬ СТРАНУ" id="add-button" />

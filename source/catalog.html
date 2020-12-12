@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Попутчики</title>
 </head>
 
 <body class="body">
@@ -90,7 +90,68 @@
   </header>
   <main class="main">
     <h1 class="main__title">Попутчики</h1>
-    <p class="country-filter">Фильтрация по странам:</p>
+    <div class="country-filter">
+      <p class="country-filter__title">Фильтрация по странам:</p>
+      <div class="country-filter__lists visually-hidden">
+        <ul class="continents">
+          <li class="continents__item">ЕВРОПА</li>
+          <li class="continents__item">АЗИЯ</li>
+          <li class="continents__item">АМЕРИКА</li>
+          <li class="continents__item">ОСТРОВА</li>
+        </ul>
+        <table class="letters-table">
+          <tr>
+            <td class="letters-table__letter letters-table__letter--selected">А</td>
+            <td class="letters-table__letter">Б</td>
+            <td class="letters-table__letter">В</td>
+            <td class="letters-table__letter">Г</td>
+            <td class="letters-table__letter">Д</td>
+          </tr>
+          <tr>
+            <td class="letters-table__letter">Е</td>
+            <td class="letters-table__letter">З</td>
+            <td class="letters-table__letter">И</td>
+            <td class="letters-table__letter">К</td>
+            <td class="letters-table__letter">Л</td>
+          </tr>
+          <tr>
+            <td class="letters-table__letter">М</td>
+            <td class="letters-table__letter">Н</td>
+            <td class="letters-table__letter">О</td>
+            <td class="letters-table__letter">П</td>
+            <td class="letters-table__letter">Р</td>
+          </tr>
+          <tr>
+            <td class="letters-table__letter">С</td>
+            <td class="letters-table__letter">Т</td>
+            <td class="letters-table__letter">У</td>
+            <td class="letters-table__letter">Ф</td>
+            <td class="letters-table__letter">Х</td>
+          </tr>
+          <tr>
+            <td class="letters-table__letter">Ч</td>
+            <td class="letters-table__letter">Ш</td>
+            <td class="letters-table__letter">Э</td>
+            <td class="letters-table__letter">Ю</td>
+            <td class="letters-table__letter">Я</td>
+          </tr>
+        </table>
+        <ul class="countries">
+          <li class="countries__item">Австралия</li>
+          <li class="countries__item">Австрия</li>
+          <li class="countries__item">Азербайджан</li>
+          <li class="countries__item">Албания</li>
+          <li class="countries__item">Алжир</li>
+          <li class="countries__item">Ангола</li>
+          <li class="countries__item">Андорра</li>
+          <li class="countries__item">Антигуа и Барбуда</li>
+          <li class="countries__item">Аргентина</li>
+          <li class="countries__item">Армения</li>
+          <li class="countries__item">Афганистан</li>
+        </ul>
+      </div>
+      <button class="button button--turn" type="button">СВЕРНУТЬ</button>
+    </div>
     <form class="filters" action="https://echo.htmlacademy.ru" method="POST" id="find-companion">
       <header class="filters__header">
         Подберите идеального попутчика
