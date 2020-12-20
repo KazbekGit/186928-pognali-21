@@ -11,38 +11,46 @@
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper wrapper">
-      <a class="logo-link" href="index.html">
-        <img class="logo" src="/source/img/logo-pognali.svg" alt="Логотип Погнали" width="96" height="15" />
-      </a>
-      <button class="page-header__hamburger-button">Open/Close menu</button>
+      <div class="logo-and-btn">
+        <a class="logo-link" href="index.html">
+          <img class="logo" src="img/logo-pognali.svg" alt="Логотип Погнали" width="96" height="15" /></a>
+        <button class="hamburger-button hamburger-button--open" title="Open/Close menu"></button>
+      </div>
       <nav class="main-nav visually-hidden">
+        <div class="logo-and-btn">
+          <a class="logo-link logo-link--modal" href="index.html">
+            <img class="logo" src="img/logo-modal.png" alt="Логотип Погнали" width="96" height="15" /></a>
+          <button class="hamburger-button hamburger-button--close" title="Open/Close menu"></button>
+        </div>
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
-            <a href="blankpage.html">О СЕРВИСЕ</a>
+            <a class="main-nav__list-item-link" href="blankpage.html">О СЕРВИСЕ</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="form.html">НАПРАВЛЕНИЯ</a>
+            <a class="main-nav__list-item-link" href="form.html">НАПРАВЛЕНИЯ</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="catalog.html">ПОПУТЧИКИ</a>
+            <a class="main-nav__list-item-link" href="catalog.html">ПОПУТЧИКИ</a>
           </li>
         </ul>
         <a class="authorization-link" href="auth.html">АВТОРИЗАЦИЯ</a>
-        <div class="main-nav__contacts contacts">
+        <div class="main-nav__phone-block">
           <svg class="main-nav__phone-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <circle cx="22.5" cy="22.5" r="22.5" fill="#121936" />
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M22.4999 15.0862C19.7035 15.0862 16.9003 15.5588 15.8832 16.5009C15.0393 17.2825 14.758 18.6633 14.6632 19.5375C14.6632 19.5375 14.6501 19.6239 14.6501 19.6611C14.6501 20.0039 14.9444 20.2789 15.3043 20.2789C15.3468 20.2789 16.92 20.1584 17.8685 20.0843C17.8913 20.0811 17.9143 20.0781 17.9372 20.0719C18.2904 20.0627 18.575 19.7908 18.575 19.4541L18.5782 18.237C18.5782 17.8601 18.9021 17.5574 19.3012 17.5574H25.6987C26.0978 17.5574 26.4218 17.8601 26.4218 18.237L26.425 19.4541C26.425 19.7908 26.7095 20.0627 27.0628 20.0719C27.0854 20.0781 27.1085 20.0811 27.1315 20.0843C28.0801 20.1583 29.6533 20.2789 29.6957 20.2789C30.0553 20.2789 30.3499 20.0039 30.3499 19.6611C30.3499 19.6239 30.3368 19.5375 30.3368 19.5375C30.2419 18.6633 29.9609 17.2826 29.117 16.5009C28.0996 15.5588 25.2964 15.0862 22.4999 15.0862ZM22.4999 23.1177C21.7771 23.1177 21.1916 23.6706 21.1916 24.3533C21.1916 25.036 21.7771 25.5889 22.4999 25.5889C23.2228 25.5889 23.8082 25.036 23.8082 24.3533C23.8082 23.6706 23.2228 23.1177 22.4999 23.1177ZM21.5187 20.3375V19.5653C21.5187 19.139 21.1524 18.793 20.7011 18.793C20.2498 18.793 19.8834 19.1391 19.8834 19.5653V20.3375L15.4709 24.7889C15.1669 25.07 14.9771 25.4622 14.9771 25.8948V27.1335C14.9771 27.8162 15.5626 28.3691 16.2854 28.3691H16.6125V29.1414C16.6125 29.5677 16.979 29.9136 17.4302 29.9136C17.8815 29.9136 18.2479 29.5677 18.2479 29.1414V28.3691H26.752V29.1414C26.752 29.5677 27.1182 29.9136 27.5697 29.9136C28.021 29.9136 28.3873 29.5677 28.3873 29.1414V28.3691H28.7144C29.4373 28.3691 30.0227 27.8162 30.0227 27.1335V25.8948C30.0227 25.4622 29.833 25.07 29.5289 24.7889L25.1166 20.3375V19.5653C25.1166 19.139 24.7502 18.793 24.2989 18.793C23.8476 18.793 23.4812 19.1391 23.4812 19.5653V20.3375H21.5187ZM22.4999 21.8821C23.9456 21.8821 25.1166 22.988 25.1166 24.3533C25.1166 25.7187 23.9457 26.8247 22.4999 26.8247C21.0543 26.8247 19.8834 25.7187 19.8834 24.3533C19.8834 22.988 21.0543 21.8821 22.4999 21.8821Z"
-              fill="#FFD74B" />
+              fill="" />
           </svg>
           <a class="main-nav__phone-link" href="tel:+88005558628" title="Позвоните нам">8 800 555-86-28</a>
+        </div>
+        <div class="main-nav__mail-block">
           <svg class="main-nav__mail-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <circle cx="22.5" cy="22.5" r="22.5" fill="#121936" />
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M30.1393 27.4663L25.8089 23.5L30.1393 19.5337L29.5488 18.9026L23.25 24.6719L16.9512 18.9026L16.3607 19.5337L20.6911 23.5L16.3607 27.4663L16.9512 28.0974L21.3308 24.0859L23.25 25.8438L25.1691 24.0859L29.5488 28.0974L30.1393 27.4663ZM15.5759 17.25C14.7669 17.25 14.1111 17.9488 14.1111 18.8079V28.1921C14.1111 29.0525 14.7616 29.75 15.5759 29.75H30.924C31.733 29.75 32.3889 29.0512 32.3889 28.1921V18.8079C32.3889 17.9475 31.7383 17.25 30.924 17.25H15.5759Z"
-              fill="#FFD74B" />
+              fill="" />
           </svg>
           <a class="main-nav__mail" href="mailto:mail@htmlacademy.ru" title="Напишите нам">mail@htmlacademy.ru</a>
         </div>
@@ -89,7 +97,7 @@
   <main class="main">
     <section class="promo">
       <div class="promo__wrapper wrapper">
-        <h1 class="promo__header">В путешествие с крутыми попутчиками!</h1>
+        <h1 class="promo__header">В путешествие <br/> с крутыми попутчиками!</h1>
         <div class="promo__contacts">
           <a class="promo__phone" href="tel:+88005558628" title="Позвоните нам">
             <svg class="promo__phone-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -97,10 +105,10 @@
               <circle cx="20" cy="20" r="20" fill="#FF8D30" />
               <path
                 d="M19.7743 19.2239C19.7743 19.4129 19.9279 19.5614 20.1157 19.5614C20.5048 19.5614 20.8189 19.8753 20.8189 20.2566C20.8189 20.4423 20.9725 20.5941 21.1603 20.5941C21.348 20.5941 21.5017 20.4423 21.5017 20.2566C21.5017 19.5006 20.8804 18.8864 20.1157 18.8864C19.9279 18.8864 19.7743 19.0383 19.7743 19.2239ZM25.332 20.5941C25.5231 20.5941 25.6733 20.4423 25.6733 20.2566C25.6733 17.2259 23.1813 14.7621 20.1157 14.7621C19.9279 14.7621 19.7743 14.914 19.7743 15.0996C19.7743 15.2853 19.9279 15.4371 20.1157 15.4371C22.8057 15.4371 24.9906 17.6005 24.9906 20.2566C24.9906 20.4423 25.1442 20.5941 25.332 20.5941Z"
-                fill="#161C35" />
+                fill="" />
               <path
                 d="M22.9047 20.2566C22.9047 20.4422 23.0583 20.5941 23.2461 20.5941C23.4339 20.5941 23.5875 20.4422 23.5875 20.2566C23.5875 18.3632 22.0308 16.8242 20.1157 16.8242C19.9279 16.8242 19.7743 16.9761 19.7743 17.1617C19.7743 17.3507 19.9279 17.4992 20.1157 17.4992C21.6553 17.4992 22.9047 18.7379 22.9047 20.2566ZM20.1157 12.7C19.9279 12.7 19.7743 12.8519 19.7743 13.0375C19.7743 13.2231 19.9279 13.375 20.1157 13.375C23.9562 13.375 27.0798 16.4631 27.0798 20.2566C27.0798 20.4422 27.23 20.5941 27.4212 20.5941C27.6089 20.5941 27.7626 20.4422 27.7626 20.2566C27.7626 16.0885 24.3317 12.7 20.1157 12.7ZM23.4509 23.8139L23.0037 24.0535C22.2493 24.4619 21.6622 25.5812 20.7312 24.7375L18.3001 22.3L16.2 20.2566C15.1449 18.9235 16.3264 18.6062 16.7394 17.857L16.9818 17.4182C17.2549 16.9187 17.3539 16.3585 17.272 15.7982C17.1934 15.238 16.9374 14.7284 16.5278 14.3234C16.0294 13.8306 15.3671 13.5606 14.6604 13.5606C13.9538 13.5606 13.2881 13.8306 12.7896 14.3234L12.6156 14.4989C11.6938 15.4101 11.588 16.9795 12.3151 18.9235C13.0013 20.7797 14.3839 22.7912 16.2 24.5867C18.9686 27.3239 22.0513 28.9 24.2634 28.9C25.1373 28.9 25.8781 28.6536 26.4039 28.1339L26.5814 27.9584C27.0764 27.469 27.3529 26.8142 27.3563 26.1089C27.3529 25.4204 27.0695 24.7454 26.5814 24.2627C25.7587 23.4494 24.4717 23.2671 23.4509 23.8139Z"
-                fill="#161C35" />
+                fill="" />
             </svg>
           </a>
           <a class="promo__mail" href="mailto:mail@htmlacademy.ru" title="Напишите нам">
@@ -109,59 +117,64 @@
               <circle cx="20" cy="20" r="20" fill="#FFBD30" />
               <path
                 d="M12.0166 15.3253L18.7666 19.5557C18.9934 19.6975 19.2868 19.7647 19.582 19.7647C19.8772 19.7647 20.1706 19.6975 20.3974 19.5557L27.1474 15.3253C27.5875 15.0491 28.0033 13.975 27.196 13.975H11.9689C11.1616 13.975 11.5774 15.0491 12.0166 15.3253ZM27.3517 17.6384L20.3974 21.8668C20.0914 22.0537 19.8772 22.0757 19.582 22.0757C19.2868 22.0757 19.0726 22.0537 18.7666 21.8668C18.4606 21.6799 12.3469 17.9408 11.8474 17.6374C11.4964 17.4232 11.5 17.6741 11.5 17.8673V25.525C11.5 25.966 12.0094 26.575 12.4 26.575H26.8C27.1906 26.575 27.7 25.966 27.7 25.525V17.8684C27.7 17.6752 27.7036 17.4242 27.3517 17.6384Z"
-                fill="#161C35" />
+                fill="" />
             </svg>
           </a>
-          <a class="authorization-link" href="auth.html">АВТОРИЗАЦИЯ</a>
+          <a class="authorization-link authorization-link--small" href="auth.html">АВТОРИЗАЦИЯ</a>
         </div>
-        <div class="quote">
-          <blockquote class="quote__blockquote">
-            «Лучшее приложение,
-            <br />
-            что я видел в жизни!»
-          </blockquote>
-          <cite class="quote__cite">
-            Мурат Эльтазин
-            <br />
-            главный редактор
-            <br />
-            газеты «гаджетлайф»
-          </cite>
-        </div>
+
+        <blockquote class="promo__quote">
+          «Лучшее приложение,
+          <br />
+          что я видел в жизни!»
+        </blockquote>
+        <cite class="promo__cite">
+          Мурат Эльтазин
+          <br />
+          главный редактор
+          <br />
+          газеты «гаджетлайф»
+        </cite>
+
         <ul class="promo__list">
-          <li class="promo__item">Выберите направление</li>
-          <li class="promo__item">Изучите идеи путешественников</li>
-          <li class="promo__item">Находите тех, кто похож на вас</li>
-          <li class="promo__item">Путешествуйте вместе!</li>
+          <li class="promo__list-item promo__list-item--1">Выберите <br> направление <span class="promo__item-number">1</span></li>
+          <li class="promo__list-item promo__list-item--2">Изучите идеи <br> путешественников<span class="promo__item-number">2</span></li>
+          <li class="promo__list-item promo__list-item--3">Находите тех,  <br> кто похож на вас<span class="promo__item-number">3</span></li>
+          <li class="promo__list-item promo__list-item--4">Путешествуйте <br> вместе!<span class="promo__item-number">4</span></li>
         </ul>
       </div>
     </section>
     <section class="service-info">
       <div class="service-info__wrapper wrapper">
-        <div class="description-block">
-          <h2 class="description-block__header">О сервисе</h2>
-          <p class="description-block__title">
-            Любое путешествие веселее с попутчиками, которые на одной волне с
-            тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
-            чужих.
-          </p>
-          <p class="description-block__content">
-            А если найдете кого-то близкого по духу — скорее зовите в
-            совместный трип!
-          </p>
-        </div>
+        <h2 class="section-title">О сервисе</h2>
+        <p class="section-description">
+          Любое путешествие веселее <br>
+          с попутчиками, которые на <br>
+          одной волне с тобой! Делитесь <br>
+          своими идеями путешествий и <br>
+          черпайте вдохновение в чужих.
+        </p>
+        <p class="section-content">
+          А если найдете кого-то <br>
+          близкого по духу - скорее <br>
+          зовите в совместный трип!
+        </p>
       </div>
     </section>
     <section class="countries">
       <div class="countries__wrapper wrapper">
-        <h2 class="countries__header section-header">Направления</h2>
-        <p class="countries__description">
-          Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
-          странах, куда хотели бы отправиться и чем можно там заняться.
+        <h2 class="section-title section-title--modified">Направления</h2>
+        <p class="section-description section-description--modifier">
+          Мы не продаем туры <br>
+          и ничего не рекламируем. <br>
+          Люди сами пишут о странах, <br>
+          куда хотели бы отправиться <br>
+          и чем можно там заняться.
         </p>
         <div class="countries__card">
-          <img class="countries__flag" src="img/thailand-flag-35x24.png" alt="Thailand flag" />
-          <div class="country-descrition">
+          <img class="countries__flag" src="https://placekitten.com/35/24" alt="Thailand flag" width="35" height="24"/>
+          <img class="countries__img" src="../img/thailand-mobile.png" alt="Thailand flag" width="270" height="110"/>
+          <div class="country-description">
             <h3 class="country-description__header">Таиланд</h3>
             <div class="country-description__visitors-counter">
               <svg class="country-description__user-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
@@ -176,8 +189,9 @@
           </div>
         </div>
         <div class="countries__card">
-          <img class="countries__flag" src="img/france-flag-35x24.png" alt="France flag" />
-          <div class="country-descrition">
+          <img class="countries__flag" src="https://placekitten.com/35/24" alt="France flag" />
+          <img class="countries__img" src="../img/france-mobile.png" alt="Thailand flag" width="270" height="110"/>
+          <div class="country-description">
             <h3 class="country-description__header">Франция</h3>
             <div class="country-description__visitors-counter">
               <svg class="country-description__user-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
@@ -192,9 +206,10 @@
           </div>
         </div>
         <div class="countries__card">
-          <img class="countries__flag" src="img/czech-flag-35x24.png" alt="Czech flag" />
-          <div class="country-descrition czech-description">
-            <h3 class="country-description__header">Чехия</h3>
+          <img class="countries__flag" src="https://placekitten.com/35/24" alt="Czech flag" />
+          <img class="countries__img" src="../img/czech-mobile.png" alt="Thailand flag" width="270" height="110"/>
+          <div class="country-description czech-description">
+            <h3 class="country-description__header country-description__header--modified">Чехия</h3>
             <div class="country-description__visitors-counter">
               <svg class="country-description__user-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -204,24 +219,22 @@
               </svg>
               <span class="country-description__visitors-number">5326</span>
             </div>
-            <p class="country-description__content">Закоулки старой Европы</p>
+            <p class="country-description__content country-description__content--modified">Закоулки старой <br> Европы</p>
           </div>
         </div>
-        <button class="show-button button">Показать все</button>
+        <button class="show-button">Показать все</button>
       </div>
     </section>
     <section class="users">
       <div class="users__wrapper wrapper">
-        <div class="description-block">
-          <h2 class="description-block__header">Попутчики</h2>
-          <p class="description-block__title">
-            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-            Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-          </p>
-          <p class="description-block__content">
-            Теперь можно легко найти единомышленников!
-          </p>
-        </div>
+        <h2 class="section-title">Попутчики</h2>
+        <p class="section-description">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <p class="section-content">
+          Теперь можно легко найти единомышленников!
+        </p>
         <div class="user-card">
           <img class="user-card__photo" src="https://placekitten.com/270/270" alt="User photo" width="270"
             height="270" />
@@ -386,16 +399,16 @@
             </ul>
           </div>
         </div>
-        <button class="show-button button">Показать всех</button>
+        <button class="show-button">Показать всех</button>
       </div>
     </section>
     <section class="buisness-rates">
       <div class="buisness-rates__wrapper wrapper">
-        <div class="description-block">
-          <h2 class="description-block__header">
-            Добавьте свой профиль
+        <div class="buisness-rates__header">
+          <h2 class="section-title section-title--profile">
+            Добавьте <br> свой <br> профиль
           </h2>
-          <img class="description-block__image" src="img/add-profile-rates.png" alt="Rates image" width="100"
+          <img class="buisness-rates__image" src="img/add-profile-rates.png" alt="Rates image" width="100"
             height="100" />
         </div>
         <ul class="buisness-rates__list">
@@ -449,18 +462,16 @@
     </section>
     <section class="feedback">
       <div class="feedback__wrapper wrapper">
-        <div class="description-block">
-          <h2 class="description-block__header">
-            Заинтересовались
-          </h2>
-          <p class="description-block__title feedback__text-wrapper">
-            Зарегистрируйтесь, <br />
-            это быстро и бесплатно! <br />
-            Уже зарегистрированы? Тогда <br />
-            скорее
-            <a class="feedback__authorization" href="auth.html" title="Авторизация">авторизуйтесь</a>.
-          </p>
-        </div>
+        <h2 class="section-title">
+          Заинтересовались
+        </h2>
+        <p class="section-description">
+          Зарегистрируйтесь, <br />
+          это быстро и бесплатно! <br />
+          Уже зарегистрированы? Тогда <br />
+          скорее
+          <a class="feedback__authorization" href="auth.html" title="Авторизация">авторизуйтесь</a>.
+        </p>
         <input type="email" name="user-email" id="feedback-email" />
         <button class="feedback__send-email"></button>
         <p class="feedback__text">
@@ -489,7 +500,7 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <div class="map__wrapper">
+      <div class="map__wrapper wrapper">
         <svg class="map__mark-icon" width="45" height="45" viewBox="0 0 45 45" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <circle cx="22.5" cy="22.5" r="22.5" fill="#121936" />
@@ -502,21 +513,22 @@
           ул. Большая <br />
           Конюшенная, 19/8
         </p>
-        <button class="show-button button map__button">
+        <button class="show-button show-button--map">
           Проложить маршрут
         </button>
         <div class="map__position-icon"></div>
+      </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606179607052!5m2!1sru!2sru"
           width="320" height="424" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
-      </div>
+          tabindex="0">
+        </iframe>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper wrapper">
       <a class="footer__logo-link" href="index.html">
-        <img class="footer__logo" src="/source/img/logo-pognali.svg" alt="Логотип Погнали" width="96"
+        <img class="footer__logo" src="img/logo-pognali.svg" alt="Логотип Погнали" width="96"
           height="15" />
       </a>
       <ul class="footer__social-list">

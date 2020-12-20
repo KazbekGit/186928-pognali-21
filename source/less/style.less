@@ -1,1 +1,53 @@
-// Начните писать стили здесь
+@import "normalize.less";
+
+@import "fonts.less";
+@import "colors.less";
+@import "var.less";
+
+@import "page__body.less";
+@import "header.less";
+@import "promo.less";
+@import "footer.less";
+@import "main-nav.less";
+@import "authorization-link.less";
+@import "logo-link.less";
+@import "hamburger-button.less";
+@import "logo-and-btn.less";
+@import "section-title.less";
+@import "section-description.less";
+@import "section-content.less";
+@import "service-info.less";
+@import "countries.less";
+@import "country-descrition.less";
+@import "show-button.less";
+
+
+
+h1, h2, h3, p, ul, blockquote, cite {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+section {
+  margin-top: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
+  margin: 0 auto;
+/*   outline: 2px solid grey; */
+}
