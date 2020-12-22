@@ -1,11 +1,14 @@
 .show-button {
   position: relative;
-  width: 270px;
-  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: @wrapper-width;
+  min-height: 62px;
   border-radius: 10px;
   background-color: @orange-basic;
-  margin-bottom: 30px;
-  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-top: 10px;
   padding-left: 23px;
   font-family: Blogger Sans;
   font-style: normal;
@@ -13,36 +16,17 @@
   font-size: 18px;
   line-height: 18px;
   color: @basic-blue-light;
-  text-align: left;
   box-sizing: border-box;
-
-  .arrow-mixin(@_, @width, @color) {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: @color;
-    border-width: @width;
-  }
-
-  .arrow-mixin(right, @width, @color) {
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-    border-right-style: none;
-  }
-
-  .zero-centered() {
-    position: absolute;
-    top: 0;
-    right: 26px;
-    bottom: 0;
-    margin: auto;
-  }
 
   &::after {
     content: "";
     display: inline-block;
-    .zero-centered();
+    .zero-centered(left, 209px);
     .arrow-mixin(right, 6.5px, @basic-blue-light);
+  }
+
+  &--modified {
+    margin-bottom: 30px;
   }
 
 }

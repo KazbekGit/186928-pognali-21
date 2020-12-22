@@ -1,0 +1,97 @@
+.business-rates {
+  @wrapper-margin-left: 25px;
+  position: relative;
+  background-color: @grey-light;
+  margin-top: -25px;
+  z-index: @business-rates-z;
+  padding-top: 59px;
+  padding-bottom: 40px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  &__wrapper {
+    padding-left: @wrapper-margin-left;
+    padding-top: 17px;
+    box-sizing: border-box;
+  }
+
+  &__list {
+    margin-top: 42px;
+    margin-bottom: 30px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    width: @wrapper-width - @wrapper-margin-left;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+  }
+
+  &__item--first {
+    border-top: 1px solid @grey-soft;
+  }
+
+  &__item--second {
+    border-top: 1px solid @grey-soft;
+    border-bottom: 1px solid @grey-soft;
+    padding-top: 9px;
+  }
+
+  &__item--third {
+    border-bottom: 1px solid @grey-soft;
+    padding-top: 12px;
+  }
+
+  &__item--first::after {
+    content: "1";
+    position: absolute;
+    right: 1px;
+    top: 3px;
+    text-align: center;
+    padding-top: 10px;
+    .make-circle(34px, @special-orange);
+    .bs-normal-16();
+  }
+
+  &__item--second::after {
+    content: "2";
+    position: absolute;
+    right: 1px;
+    top: 3px;
+    text-align: center;
+    padding-top: 10px;
+    .make-circle(34px, @special-yellow-dark);
+    .bs-normal-16();
+  }
+
+  &__item--third::after {
+    content: "3";
+    position: absolute;
+    right: 1px;
+    top: 3px;
+    text-align: center;
+    padding-top: 10px;
+    .make-circle(34px, @orange-basic);
+    .bs-normal-16();
+  }
+
+  &__open-modal {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: @blue-shiny;
+  }
+
+
+
+}
+

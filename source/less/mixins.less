@@ -1,0 +1,60 @@
+.arrow-mixin(@_, @width, @color) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: @color;
+  border-width: @width;
+}
+
+.arrow-mixin(right, @width, @color) {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-style: none;
+}
+
+.zero-centered(){
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin: auto;
+}
+
+.zero-centered(@_, @bias) {
+  position: absolute;
+  margin: auto;
+}
+
+.zero-centered(left, @bias) {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: @bias;
+}
+
+.zero-centered-modal(@position){
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: @position;
+  margin: auto;
+}
+
+.bs-normal-16(){
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: @white;
+}
+
+.make-circle(@width, @back-color) {
+  width: @width;
+  height: @width;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: @back-color;
+}

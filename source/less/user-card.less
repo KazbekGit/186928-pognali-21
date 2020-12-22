@@ -1,0 +1,95 @@
+.user-card {
+  position: relative;
+  width: @wrapper-width;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
+
+  &__flags {
+    position: absolute;
+    top: 255px;
+    left: 50px;
+  }
+
+  &__photo {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 27px 36px 16px 42px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+  }
+
+  &__user-name {
+    width: inherit;
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    margin-left: 10px;
+    color: @basic-blue-light;
+  }
+
+  &__user-name--offline::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: @orange-light;
+    margin-right: 10px;
+  }
+
+  &__user-name--online::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: @green-light;
+    margin-right: 10px;
+  }
+
+
+  &__user-hobbies {
+    width: 188px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 14px;
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: @special-grey;
+  }
+
+  &__transport {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: 35px;
+  }
+
+  &__transport-item {
+    padding-right: 12px;
+  }
+
+  &__transport-icon {
+    fill: @blue-lighter-transparent;
+  }
+
+  &__transport-icon--active {
+    fill: @blue-lighter;
+  }
+
+}
