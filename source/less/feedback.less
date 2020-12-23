@@ -1,0 +1,28 @@
+.feedback {
+  position: relative;
+  margin-top: -25px;
+  padding-top: 95px;
+  z-index: @feedback-z;
+  background-color: @blue-basic;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__authorization {
+    color: @orange-basic;
+  }
+
+  &__email {
+    display: block;
+    width: 220px;
+    height: 62px;
+  }
+
+  &__send-email {
+    .make-circle(6px, @orange-basic);
+  }
+
+}

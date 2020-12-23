@@ -1,6 +1,7 @@
 .main-nav {
   width: @mobile-width;
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
   display: flex;
@@ -9,8 +10,6 @@
   padding: 27px 25px 41px 25px;
   box-sizing: border-box;
   background-color: @white;
-  background-color: aqua;
-
 
   &__list {
     margin: 0;
@@ -32,48 +31,6 @@
     color: @blue-basic;
   }
 
-  &__phone-block {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: @wrapper-width;
-    margin-top: 51px;
-  }
-
-  &__mail-block {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: @wrapper-width;
-  }
-
-  &__phone-link {
-    font-family: Blogger Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
-    text-decoration: none;
-    color: @blue-basic;
-    margin-left: 16px;
-  }
-
-  &__mail {
-    font-family: Blogger Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: @blue-basic;
-    margin-left: 16px;
-  }
-
-  &__mail-block {
-    margin-bottom: 41px;
-  }
-
   &__social-list {
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +38,8 @@
     padding: 0;
     margin: 0;
     margin-bottom: -4px;
+    margin-top: 41px;
+
   }
 
   &__social-item {
@@ -92,14 +51,5 @@
     list-style-type: none;
     margin-left: 0px;
   }
-
-  &__phone-icon {
-    fill: @orange-basic;
-  }
-
-  &__mail-icon {
-    fill: @orange-basic;
-  }
-
 
 }

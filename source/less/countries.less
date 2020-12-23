@@ -1,12 +1,12 @@
 .countries {
+  position: relative;
   background-color: @basic-grey;
   margin-top: -25px;
-  z-index: 0;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  z-index: @countries-z;
+  .border-radius-all(0px, 0px, 30px, 30px);
 
   &__wrapper {
-    padding-top: 91px;
+    padding-top: 106px;
   }
 
   &__card {
