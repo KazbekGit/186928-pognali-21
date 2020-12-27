@@ -20,13 +20,19 @@
 
   &::after {
     content: "";
-    display: inline-block;
+    display: block;
     .zero-centered(left, 209px);
     .arrow-mixin(right, 6.5px, @basic-blue-light);
   }
 
   &--modified {
     margin-bottom: 0px;
+  }
+
+  &--address {
+    border: 3px solid @blue-basic;
+    box-sizing: border-box;
+    border-radius: 10px;
   }
 
 }

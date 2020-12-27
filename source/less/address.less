@@ -1,8 +1,29 @@
 .address {
   position: relative;
   width: @mobile-width;
+  min-height: @addrres-height;
+  margin-top: -32px;
+  padding-top: 74px;
   background-color: @orange-basic;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   z-index: @address-z;
+  box-sizing: border-box;
+
+  &__mark-icon {
+    margin-right: 16px;
+    margin-bottom: 23px;
+  }
+
+  &__adress-text {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: @basic-blue-light;
+  }
+
+
 }

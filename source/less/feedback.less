@@ -1,9 +1,12 @@
 .feedback {
   position: relative;
   margin-top: -25px;
-  padding-top: 95px;
+  padding-top: 105px;
+  padding-bottom: 15px;
   z-index: @feedback-z;
   background-color: @blue-basic;
+  box-sizing: border-box;
+  .border-radius-all(0px, 0px, 30px, 30px);
 
   &__wrapper {
     display: flex;
@@ -15,14 +18,43 @@
     color: @orange-basic;
   }
 
+  &__email-block {
+    position: relative;
+    margin-bottom: 29px;
+    margin-top: 10px;
+  }
+
   &__email {
     display: block;
-    width: 220px;
+    width: @wrapper-width;
     height: 62px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 25px;
+    box-sizing: border-box;
+    font-family: Blogger Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+
   }
 
   &__send-email {
-    .make-circle(6px, @orange-basic);
+    position: absolute;
+    top: 0;
+    right: 0;
+    .make-circle(62px, @orange-basic, 10px);
+
+  }
+
+  &__send-email::after {
+    content: "";
+    display: block;
+    .zero-centered();
+    .arrow-mixin(right, 6.5px, @basic-blue-light);
   }
 
 }
