@@ -1,63 +1,40 @@
 .business-rates-modal {
-  width: @wrapper-width;
   height: @business-modal-height;
-  background-color: @white;
-  .zero-centered-modal(fixed);
   z-index: 9;
-
-  box-shadow: 0px 2px 8px @black-transparent;
   box-sizing: border-box;
-  border-radius: 20px;
+}
 
-  &__wrapper {
-    justify-content: center;
-    padding-top: 34px;
-  }
+.business-rates-modal__wrapper {
+  justify-content: center;
+  padding-top: 34px;
+}
 
-  &__list {
-    width: @wrapper-width - 51px;
-    justify-content: flex-start;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 30px;
-  }
+.business-rates-modal__list {
+  width: @wrapper-width - 51px;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
 
-  &__item {
-    position: relative;
-    margin-bottom: 0px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    box-sizing: border-box;
-    border-top: 1px solid @grey-soft;
-    font-family: Blogger Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: @special-grey;
-
-  }
-
-  &__item:last-child {
+.business-rates-modal__item {
+  &:last-child {
     border-bottom: 1px solid @grey-soft;
     padding-top: 12px;
   }
-
-  &__close-modal {
-    width: @wrapper-width;
-    background-color: @grey-dark;
-    padding-top: 15px;
-    padding-bottom: 18px;
-    font-family: Blogger Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
-    color: @basic-blue-light;
-    .border-radius-all(0, 0);
-  }
+  position: relative;
+  margin-bottom: 0 px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  box-sizing: border-box;
+  border-top: 1px solid @grey-soft;
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0 em;
+  text-align: left;
+  color: @special-grey;
 }

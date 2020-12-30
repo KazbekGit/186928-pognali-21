@@ -5,29 +5,23 @@
   padding: 0;
   margin: 0;
   margin-bottom: -4px;
-  margin-top: 41px;
+}
 
-  &--modified {
-    margin-top: 0;
-    margin-bottom: 37px;
-  }
+.social-list__item {
+  list-style-type: none;
+  margin-left: 27px;
 
-  &__social-item {
+  &:first-of-type {
     list-style-type: none;
-    margin-left: 27px;
+    margin-left: 0;
   }
 
-  &__social-item:first-of-type {
-    list-style-type: none;
-    margin-left: 0px;
-  }
-
-  &__social-item--modified {
+  &--colored-bg {
     .make-circle(45px, @orange-basic);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 0;
   }
-
 }
+

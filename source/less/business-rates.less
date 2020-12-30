@@ -5,89 +5,89 @@
   margin-top: -25px;
   z-index: @business-rates-z;
   padding-top: 65px;
-  padding-bottom: 30px;
-  .border-radius-all(0px, 0px, 30px, 30px);
+  padding-bottom: 35px;
+  .border-radius-all(0 px, 0 px, 30px, 30px);
+  counter-reset: content;
+}
 
-  &__wrapper {
-    padding-left: @wrapper-margin-left;
-    padding-top: 17px;
-    box-sizing: border-box;
-  }
+.business-rates__wrapper {
+  padding-left: @wrapper-margin-left;
+  padding-top: 17px;
+  box-sizing: border-box;
+}
 
-  &__list {
-    margin-top: 42px;
-    margin-bottom: 30px;
-    list-style-type: none;
-    padding: 0;
-  }
+.business-rates__list {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  list-style-type: none;
+  padding: 0;
+}
 
-  &__item {
-    width: @wrapper-width - @wrapper-margin-left;
-    padding-top: 11px;
-    padding-bottom: 10px;
-    position: relative;
-    margin-bottom: 0px;
-    box-sizing: border-box;
-  }
-
-  &__item--first {
+.business-rates__item {
+  &--first {
+    &::after {
+      counter-increment: content;
+      content: counter(content);
+      position: absolute;
+      right: 1px;
+      top: 3px;
+      text-align: center;
+      padding-top: 10px;
+      .make-circle(34px, @special-orange);
+      .bs-normal-16();
+    }
     border-top: 1px solid @grey-soft;
   }
 
-  &__item--second {
-    border-top: 1px solid @grey-soft;
-    border-bottom: 1px solid @grey-soft;
-    padding-top: 9px;
+  &--second {
+    &::after {
+      counter-increment: content;
+      content: counter(content);
+      position: absolute;
+      right: 1px;
+      top: 3px;
+      text-align: center;
+      padding-top: 10px;
+      .make-circle(34px, @special-yellow-dark);
+      .bs-normal-16();
+    }
   }
 
-  &__item--third {
+  &--third {
+    &::after {
+      counter-increment: content;
+      content: counter(content);
+      position: absolute;
+      right: 1px;
+      top: 3px;
+      text-align: center;
+      padding-top: 10px;
+      .make-circle(34px, @orange-basic);
+      .bs-normal-16();
+    }
     border-bottom: 1px solid @grey-soft;
     padding-top: 12px;
   }
 
-  &__item--first::after {
-    content: "1";
-    position: absolute;
-    right: 1px;
-    top: 3px;
-    text-align: center;
-    padding-top: 10px;
-    .make-circle(34px, @special-orange);
-    .bs-normal-16();
-  }
+  width: @wrapper-width - @wrapper-margin-left;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 0 px;
+  box-sizing: border-box;
+  border-top: 1px solid @grey-soft;
+  border-bottom: 1px solid @grey-soft;
+}
 
-  &__item--second::after {
-    content: "2";
-    position: absolute;
-    right: 1px;
-    top: 3px;
-    text-align: center;
-    padding-top: 10px;
-    .make-circle(34px, @special-yellow-dark);
-    .bs-normal-16();
-  }
-
-  &__item--third::after {
-    content: "3";
-    position: absolute;
-    right: 1px;
-    top: 3px;
-    text-align: center;
-    padding-top: 10px;
-    .make-circle(34px, @orange-basic);
-    .bs-normal-16();
-  }
-
-  &__open-modal {
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    font-family: Blogger Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 16px;
-    color: @blue-shiny;
-  }
+.business-rates__open-modal {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: @blue-shiny;
 }
 

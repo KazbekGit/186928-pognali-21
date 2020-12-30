@@ -1,27 +1,25 @@
 .mail-block {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: @wrapper-width;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: @wrapper-width;
+}
 
-    &__mail-link {
-      font-family: Blogger Sans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 18px;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: @orange-basic;
-      margin-left: 16px;
-    }
+.mail-block__link {
+  &--colored {
+    color: @blue-basic;
+  }
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @orange-basic;
+  margin-left: 16px;
+}
 
-    &__mail-icon {
-      fill: @orange-basic;
-    }
-
-    &__mail-link--colored {
-      color: @blue-basic;
-    }
-
+.mail-block__icon {
+  fill: @orange-basic;
 }
