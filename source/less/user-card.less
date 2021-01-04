@@ -1,8 +1,8 @@
 .user-card {
   position: relative;
-  width: @wrapper-width;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin-bottom: 9px;
 
   &:last-of-type {
@@ -19,6 +19,10 @@
 .user-card__photo {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+
+  &--rounded {
+    border-radius: 50%;
+  }
 }
 
 .user-card__info {

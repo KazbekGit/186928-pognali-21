@@ -1,0 +1,32 @@
+.add-plans {
+  position: relative;
+  z-index: @add-plans;
+  margin-top: -25px;
+  padding-top: 31px;
+  padding-bottom: 68px;
+  border-radius: 30px;
+  background-color: @grey-darken;
+}
+
+.add-plans__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.add-plans__swipe-points {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-plans__swipe-point {
+  .make-circle(5px, @basic-blue-light);
+  margin-right: 16px;
+  opacity: 0.3;
+
+  &--active {
+    opacity: 1;
+  }
+}
