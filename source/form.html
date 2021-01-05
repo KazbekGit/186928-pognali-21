@@ -99,115 +99,105 @@
               бы позвать в поездку, и ее предполагаемую длительность.
             </p>
             <div class="plans-step__companion-duration">
-              <p class="plans-step__companion-header">
+              <p class="plans-step__subtitle">
                 ИЩУ ПОПУТЧИКОВ:
               <span class="plans-step__companion-item"> ЧЕЛ.</span>
               </p>
               <div class="plans-step__companion">
-                <input type="number" class="plans-step__num" value="2" data-companion-num="2" />
-                <span class="plans-step__companion-plus">+</span>
-                <span class="plans-step__companion-minus">-</span>
+                <input type="number" class="plans-step__num" value="2" data-companion-num="2" min="0" />
+                <div class="plans-step__companion-plus"></div>
+                <div class="plans-step__companion-minus"></div>
               </div>
-              <p class="plans-step__duration-header">
+              <p class="plans-step__subtitle">
                 ДЛИТЕЛЬНОСТЬ:<span> ДН.</span>
               </p>
               <div class="plans-step__duration">
                 <input type="number" class="plans-step__num" value="3" data-duration-num="3" />
-                <span class="plans-step__duration-plus">+</span>
-                <span class="plans-step__duration-minus">-</span>
+                <div class="plans-step__duration-plus"></div>
+                <div class="plans-step__duration-minus"></div>
               </div>
             </div>
-            <input class="plans-step__checkbox" type="checkbox" name="children" id="children" />
-            <span class="plans-step__checkbox-description">Можно с детьми</span>
+            <input class="plans-step__checkbox visually-hidden" type="checkbox" name="children" id="children" />
+            <label class="plans-step__checkbox-description" for="children">Можно с детьми</label>
             <div class="calendar">
               <p class="calendar__month">Март 2019</p>
               <table class="calendar__table">
-                <tr class="calendar__days-list">
-                  <th class="calendar__day">П</th>
-                  <th class="calendar__day">В</th>
-                  <th class="calendar__day">С</th>
-                  <th class="calendar__day">Ч</th>
-                  <th class="calendar__day">П</th>
-                  <th class="calendar__day calendar__day--weekend">С</th>
-                  <th class="calendar__day calendar__day--weekend">В</th>
-                </tr>
-                <tr>
-                  <td class="calendar__number">23</td>
-                  <td class="calendar__number">24</td>
-                  <td class="calendar__number">25</td>
-                  <td class="calendar__number">26</td>
-                  <td class="calendar__number">27</td>
-                  <td class="calendar__number">28</td>
-                  <td class="calendar__number">1</td>
-                </tr>
-                <tr>
-                  <td class="calendar__number">2</td>
-                  <td class="calendar__number">3</td>
-                  <td class="calendar__number">4</td>
-                  <td class="calendar__number">5</td>
-                  <td class="calendar__number">6</td>
-                  <td class="calendar__number">7</td>
-                  <td class="calendar__number">8</td>
-                </tr>
-                <tr>
-                  <td class="calendar__number">9</td>
-                  <td class="calendar__number">10</td>
-                  <td class="calendar__number">11</td>
-                  <td class="calendar__number">12</td>
-                  <td class="calendar__number">13</td>
-                  <td class="calendar__number">14</td>
-                  <td class="calendar__number">15</td>
-                </tr>
-                <tr>
-                  <td class="calendar__number">16</td>
-                  <td class="calendar__number">17</td>
-                  <td class="calendar__number">18</td>
-                  <td class="calendar__number">19</td>
-                  <td class="calendar__number">20</td>
-                  <td class="calendar__number">21</td>
-                  <td class="calendar__number">22</td>
-                </tr>
-                <tr>
-                  <td class="calendar__number">23</td>
-                  <td class="calendar__number">24</td>
-                  <td class="calendar__number">25</td>
-                  <td class="calendar__number calendar__number--selected">26</td>
-                  <td class="calendar__number calendar__number--selected">27</td>
-                  <td class="calendar__number calendar__number--selected">28</td>
-                  <td class="calendar__number calendar__number--arrival">29</td>
-                </tr>
-                <tr>
-                  <td class="calendar__number calendar__number--arrival">30</td>
-                  <td class="calendar__number calendar__number--arrival">31</td>
-                  <td class="calendar__number calendar__number--arrival">1</td>
-                  <td class="calendar__number calendar__number--arrival">2</td>
-                  <td class="calendar__number calendar__number--arrival">3</td>
-                  <td class="calendar__number calendar__number--arrival">4</td>
-                  <td class="calendar__number calendar__number--arrival">5</td>
-                </tr>
+                <thead class="calendar__head">
+                  <tr class="calendar__days-list">
+                    <th class="calendar__day">П</th>
+                    <th class="calendar__day">В</th>
+                    <th class="calendar__day">С</th>
+                    <th class="calendar__day">Ч</th>
+                    <th class="calendar__day">П</th>
+                    <th class="calendar__day calendar__day--weekend">С</th>
+                    <th class="calendar__day calendar__day--weekend">В</th>
+                  </tr>
+                </thead>
+                <tbody class="calendar__body">
+                  <tr>
+                    <td class="calendar__number">23</td>
+                    <td class="calendar__number">24</td>
+                    <td class="calendar__number">25</td>
+                    <td class="calendar__number">26</td>
+                    <td class="calendar__number">27</td>
+                    <td class="calendar__number">28</td>
+                    <td class="calendar__number">1</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__number">2</td>
+                    <td class="calendar__number">3</td>
+                    <td class="calendar__number">4</td>
+                    <td class="calendar__number">5</td>
+                    <td class="calendar__number">6</td>
+                    <td class="calendar__number">7</td>
+                    <td class="calendar__number">8</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__number">9</td>
+                    <td class="calendar__number">10</td>
+                    <td class="calendar__number">11</td>
+                    <td class="calendar__number">12</td>
+                    <td class="calendar__number">13</td>
+                    <td class="calendar__number">14</td>
+                    <td class="calendar__number">15</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__number">16</td>
+                    <td class="calendar__number">17</td>
+                    <td class="calendar__number">18</td>
+                    <td class="calendar__number">19</td>
+                    <td class="calendar__number">20</td>
+                    <td class="calendar__number">21</td>
+                    <td class="calendar__number">22</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__number">23</td>
+                    <td class="calendar__number">24</td>
+                    <td class="calendar__number">25</td>
+                    <td class="calendar__number calendar__number--selected">26</td>
+                    <td class="calendar__number calendar__number--selected">27</td>
+                    <td class="calendar__number calendar__number--selected">28</td>
+                    <td class="calendar__number calendar__number--arrival">29</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__number calendar__number--arrival">30</td>
+                    <td class="calendar__number calendar__number--arrival">31</td>
+                    <td class="calendar__number calendar__number--arrival">1</td>
+                    <td class="calendar__number calendar__number--arrival">2</td>
+                    <td class="calendar__number calendar__number--arrival">3</td>
+                    <td class="calendar__number calendar__number--arrival">4</td>
+                    <td class="calendar__number calendar__number--arrival">5</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <a class="plans-step__some-step plans-step__some-step--backgroung" href="#plans-step2">СЛЕДУЮЩИЙ ШАГ</a>
           </div>
           <div class="plans-step plans-step--step2" id="plans-step2">
-            <h3 class="plans-step__header">
-              Шаг 2. <br />
-              Маршрут
-            </h3>
-            <p class="plans-step__description">
-              Укажите страны, которые вы хотели бы посетить. Это может быть одна
-              или сразу несколько.
-            </p>
-            <input class="plans-step__choose-country" type="text" placeholder="БОСНИЯ И ГЕРЦЕГОВИНА" id="country1" />
-            <img class="plans-step__country-icon" src="https://placekitten.com/35/24" alt="country-flag" width="35"
-              height="24" />
-            <input class="plans-step__choose-country" type="text" placeholder="ЧЕХИЯ" id="country2" />
-            <img class="plans-step__country-icon" src="https://placekitten.com/35/24" alt="country-flag" width="35"
-              height="24" />
-            <input class="plans-step__choose-country" type="text" placeholder="ВЫБЕРИТЕ СТРАНУ" id="country3" />
             <div class="countries-block">
               <h4 class="countries-block__header">Выберите страну</h4>
-              <table class="letters-table visually-hidden">
+              <div class="countries-block__close-modal"></div>
+              <table class="letters-table">
                 <tr>
                   <td class="letters-table__letter letters-table__letter--selected">А</td>
                   <td class="letters-table__letter">Б</td>
@@ -244,7 +234,7 @@
                   <td class="letters-table__letter">Я</td>
                 </tr>
               </table>
-              <ul class="countries-list visually-hidden">
+              <ul class="countries-list">
                 <li class="countries-list__item">Австралия</li>
                 <li class="countries-list__item">Австрия</li>
                 <li class="countries-list__item">Азербайджан</li>
@@ -258,9 +248,28 @@
                 <li class="countries-list__item">Афганистан</li>
               </ul>
             </div>
-            <input class="plans-step__choose-country" type="text" placeholder="ДОБАВИТЬ СТРАНУ" id="add-button" />
+            <h3 class="plans-step__header">
+              Шаг 2. <br />
+              Маршрут
+            </h3>
+            <p class="plans-step__description">
+              Укажите страны, которые вы хотели бы посетить. Это может быть одна
+              или сразу несколько.
+            </p>
+            <div class="plans-step__choose-block">
+              <input class="plans-step__choose-country" type="text" placeholder="БОСНИЯ И ГЕРЦЕГОВИНА" id="country1" />
+              <img class="plans-step__country-icon" src="https://placekitten.com/35/24" alt="country-flag" width="35"
+                height="24" />
+            </div>
+            <div class="plans-step__choose-block">
+              <input class="plans-step__choose-country" type="text" placeholder="ЧЕХИЯ" id="country2" />
+              <img class="plans-step__country-icon" src="https://placekitten.com/35/24" alt="country-flag" width="35"
+                height="24" />
+            </div>
+            <input class="plans-step__choose-country plans-step__choose-country--full-width" type="text" placeholder="ВЫБЕРИТЕ СТРАНУ" id="country3" />
+            <input class="plans-step__choose-country plans-step__choose-country--full-width" type="text" placeholder="ДОБАВИТЬ СТРАНУ" id="add-button" />
             <a class="plans-step__some-step plans-step__some-step--backgroung" href="#plans-step3">СЛЕДУЮЩИЙ ШАГ</a>
-            <a class="plans-step__some-step" href="#plans-step1">НА ШАГ НАЗАД</a>
+            <a class="plans-step__some-step plans-step__some-step--back" href="#plans-step1">НА ШАГ НАЗАД</a>
           </div>
           <div class="plans-step plans-step--step3" id="plans-step3">
             <h3 class="plans-step__header">
@@ -287,9 +296,9 @@
   и вот это все.
               </textarea>
             </div>
-            <a class="plans-step__some-step" href="#plans-step2">НА ШАГ НАЗАД</a>
+            <button class="plans-step__submit" type="submit">Отправить</button>
+            <a class="plans-step__some-step plans-step__some-step--back" href="#plans-step2">НА ШАГ НАЗАД</a>
           </div>
-          <button class="plans-step__submit" type="submit">Отправить</button>
         </form>
       </div>
     </section>

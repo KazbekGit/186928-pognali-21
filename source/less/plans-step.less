@@ -3,6 +3,7 @@
   border-radius: 10px;
   margin-bottom: 10px;
   padding: 24px 25px 23px 25px;
+  box-sizing: border-box;
 
   &:last-of-type {
     margin-bottom: 22px;
@@ -18,13 +19,14 @@
   text-align: left;
   color: @basic-blue-light;
   margin-bottom: 16px;
+
 }
 
 .plans-step__description {
   margin-bottom: 20px;
 }
 
-.plans-step__companion-header {
+.plans-step__subtitle {
   display: flex;
   justify-content: space-between;
   font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
@@ -36,4 +38,248 @@
   text-transform: uppercase;
   color: @basic-blue-light;
   margin-bottom: 8px;
+}
+
+.plans-step__num {
+  width: 100%;
+  height: 43px;
+  border: 2px solid @grey-solid;
+  border-radius: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.86px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.plans-step__companion {
+  position: relative;
+}
+
+.plans-step__companion-plus {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  bottom: 35px;
+  right: 13px;
+  cursor: pointer;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    width: 14px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    border: 1px solid @grey-white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    width: 14px;
+    border: 1px solid @grey-white;
+    transform: rotate(90deg);
+  }
+}
+
+.plans-step__companion-minus {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  bottom: 35px;
+  left: 13px;
+  cursor: pointer;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    width: 14px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    border: 1px solid @grey-white;
+  }
+}
+
+.plans-step__duration {
+  position: relative;
+}
+
+.plans-step__duration-plus {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  bottom: 35px;
+  right: 13px;
+  cursor: pointer;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    width: 14px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    border: 1px solid @grey-white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    width: 14px;
+    border: 1px solid @grey-white;
+    transform: rotate(90deg);
+  }
+}
+
+.plans-step__duration-minus {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  bottom: 35px;
+  left: 13px;
+  cursor: pointer;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    width: 14px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    border: 1px solid @grey-white;
+  }
+}
+
+.plans-step__checkbox-description {
+  position: relative;
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 15px;
+  color: @basic-blue-light;
+}
+
+.plans-step__checkbox-description::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+  border: 1px solid @grey-solid;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 13px;
+}
+
+.plans-step__checkbox:checked + .plans-step__checkbox-description::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+	height: 4px;
+	background: transparent;
+	top: 6px;
+	left: 8px;
+	border: 2px solid @blue-basic;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-45deg);
+}
+
+.plans-step__some-step {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 50px;
+  min-height: 40px;
+  background-color: @orange-basic;
+  text-decoration: none;
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: @basic-blue-light;
+
+  &--back {
+    background-color: transparent;
+    margin-top: 8px;
+  }
+}
+
+.plans-step__choose-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 22px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 47px;
+    .make-circle(8px, @basic-blue-light)
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 67px;
+    width: 7px;
+    height: 7px;
+    border: 1px solid @special-grey;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+  }
+
+}
+
+.plans-step__choose-country {
+  width: 168px;
+  height: 42px;
+  border: none;
+  border: 1px solid @grey-solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  color: @basic-blue-light;
+
+  &--full-width {
+    width: 100%;
+    margin-bottom: 23px;
+  }
+}
+
+.plans-step__country-icon {
+  padding: 8px 7px 8px 7px;
+  border: 1px solid @grey-solid;
+  border-radius: 5px;
+
 }

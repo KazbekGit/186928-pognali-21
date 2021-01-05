@@ -42,10 +42,15 @@
 @import "plans-card.less";
 @import "add-plans.less";
 @import "plans-step.less";
+@import "calendar.less";
+@import "countries-block.less";
+@import "letters-table.less";
+@import "countries-list.less";
 
 h1,
 h2,
 h3,
+h4,
 p,
 ul,
 blockquote,
@@ -69,4 +74,10 @@ button {
 .wrapper {
   width: @wrapper-width;
   margin: 0 auto;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
