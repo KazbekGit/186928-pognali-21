@@ -1,0 +1,31 @@
+.main__title-block {
+  padding-bottom: 4px;
+  background-color: @orange-basic;
+}
+
+.main__title {
+  position: relative;
+  padding-bottom: 13px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  .border-radius-all(0,0);
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  background-color: @dark-blue;
+  color: @white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 215px;
+    height: 5px;
+    top: 47px;
+    left: 25px;
+    .border-radius-all();
+    background-color: @special-orange;
+  }
+}

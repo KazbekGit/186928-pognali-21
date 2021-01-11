@@ -1,0 +1,31 @@
+.show-button {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: @wrapper-width;
+  min-height: 62px;
+  border-radius: 10px;
+  background-color: @orange-basic;
+  padding-left: 23px;
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic-blue-light;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    display: block;
+    .zero-centered(left, 209px);
+    .arrow-mixin(right, 8px, @basic-blue-light);
+  }
+
+  &--address {
+    border: 3px solid @blue-basic;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+}

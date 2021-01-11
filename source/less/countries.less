@@ -1,0 +1,39 @@
+.countries {
+  position: relative;
+  background-color: @basic-grey;
+  margin-top: -35px;
+  padding-bottom: 40px;
+  z-index: @countries-z;
+  .border-radius-all(0, 0, 30px, 30px);
+}
+
+.countries__title-block {
+  margin-left: 25px;
+  margin-bottom: 40px;
+}
+
+.countries__wrapper {
+  padding-top: 106px;
+}
+
+.countries__card {
+  position: relative;
+  min-height: 188px;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.countries__flag {
+  position: absolute;
+  top: 87px;
+  left: 25px;
+  z-index: @countries__flag-z;
+}
+
+.countries__img {
+  position: relative;
+  z-index: 0;
+}

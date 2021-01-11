@@ -1,0 +1,107 @@
+.calendar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 22px;
+}
+
+.calendar__month {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid @grey-white;
+  border-bottom: 1px solid @grey-white;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  color: @basic-blue-light;
+  margin-bottom: 17px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    top: 14px;
+    border: 2px solid @grey-white;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 2px;
+    top: 14px;
+    border: 2px solid @grey-white;
+    border-top: none;
+    border-right: none;
+    transform: rotate(225deg);
+  }
+}
+
+.calendar__table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.calendar__head {
+  &::after {
+    display: table-row;
+    content: "";
+    height: 10px;
+  }
+}
+
+.calendar__day {
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+
+  &--weekend {
+    color: @red-light;
+  }
+}
+
+.calendar__number {
+  width: 31px;
+  height: 31px;
+  border: 1px solid @grey-white;
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  box-sizing: border-box;
+  color: @special-grey;
+
+  &:hover {
+    outline: 2px solid @red-light;
+    outline-offset: -2px;
+    box-sizing: border-box;
+  }
+
+  &--selected {
+    background: @basic-blue-light;
+    color: @white;
+  }
+
+  &--arrival {
+    font-weight: 500;
+    background-color: @basic-grey;
+    color: @basic-blue-light;
+  }
+}

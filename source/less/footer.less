@@ -1,0 +1,42 @@
+.footer {
+  position: relative;
+  width: @mobile-width;
+  min-height: @footer-height;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  .border-radius-all(25px, 25px, 0, 0);
+  margin-top: -80px;
+  padding-bottom: 19px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo-link {
+  margin-top: 37px;
+  margin-bottom: 33px;
+}
+
+.footer__author {
+  width: @wrapper-width;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 5px;
+  border-top: 1px solid @grey-lighter;
+}
+
+.footer__author-text {
+  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
