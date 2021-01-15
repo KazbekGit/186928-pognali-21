@@ -3,29 +3,24 @@
   background-color: @orange-basic;
 }
 
-.main__title {
-  position: relative;
-  padding-bottom: 13px;
-  padding-left: 25px;
-  box-sizing: border-box;
+.main__title-bg {
   .border-radius-all(0,0);
+  background-color: @dark-blue;
+}
+
+.main__title {
+  display: inline-block;
+  padding-bottom: 11px;
+  margin-bottom: -2px;
+  margin-left: 25px;
+  border-bottom: 6px solid @special-orange;
+  .border-radius-all(3px,3px,3px,3px);
+  box-sizing: border-box;
   font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
   text-align: left;
-  background-color: @dark-blue;
   color: @white;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 215px;
-    height: 5px;
-    top: 47px;
-    left: 25px;
-    .border-radius-all();
-    background-color: @special-orange;
-  }
 }
