@@ -20,7 +20,9 @@
   </header>
   <main class="main">
     <div class="main__title-block">
-      <h1 class="main__title">Направления</h1>
+      <div class="main__title-bg">
+        <h1 class="main__title">Направления</h1>
+      </div>
     </div>
     <section class="profile-settings">
       <div class="wrapper profile-settings__wrapper">
@@ -32,7 +34,9 @@
             <span class="mark-level-form__progress-value" data-level-value="80">80</span>
             <span class="mark-level-form__progress-name">level</span>
           </div>
-          <img class="user-card__photo user-card__photo--rounded" src="https://placekitten.com/270/270" alt="User photo" width="100" height="100" />
+          <div class="user-card">
+            <img class="user-card__photo user-card__photo--rounded" src="https://placekitten.com/270/270" alt="User photo" width="100" height="100" />
+          </div>
         </div>
         <button class="form-page-btn form-page-btn--change-photo">СМЕНИТЬ ФОТО</button>
         <div class="tags">
@@ -191,7 +195,7 @@
                 </tbody>
               </table>
             </div>
-            <a class="plans-step__some-step plans-step__some-step--backgroung" href="#plans-step2">СЛЕДУЮЩИЙ ШАГ</a>
+            <a class="plans-step__some-step plans-step__some-step--backgroung" href="#plans-step2">следующий шаг</a>
           </div>
           <div class="plans-step plans-step--step2" id="plans-step2">
             <div class="countries-block visually-hidden">
@@ -257,19 +261,19 @@
               или сразу несколько.
             </p>
             <div class="plans-step__choose-block">
-              <input class="plans-step__choose-country" type="text" placeholder="БОСНИЯ И ГЕРЦЕГОВИНА" id="country1" />
+              <input class="plans-step__choose-country" type="text" placeholder="босния И герцеговинана" id="country1" />
               <img class="plans-step__country-icon" src="https://placekitten.com/35/24" alt="country-flag" width="35"
                 height="24" />
             </div>
             <div class="plans-step__choose-block">
-              <input class="plans-step__choose-country" type="text" placeholder="ЧЕХИЯ" id="country2" />
+              <input class="plans-step__choose-country" type="text" placeholder="чехия" id="country2" />
               <img class="plans-step__country-icon" src="https://placekitten.com/35/24" alt="country-flag" width="35"
                 height="24" />
             </div>
-            <input class="plans-step__choose-country plans-step__choose-country--full-width" type="text" placeholder="ВЫБЕРИТЕ СТРАНУ" id="country3" />
-            <input class="plans-step__choose-country plans-step__choose-country--full-width" type="text" placeholder="ДОБАВИТЬ СТРАНУ" id="add-button" />
-            <a class="plans-step__some-step plans-step__some-step--backgroung" href="#plans-step3">СЛЕДУЮЩИЙ ШАГ</a>
-            <a class="plans-step__some-step plans-step__some-step--back" href="#plans-step1">НА ШАГ НАЗАД</a>
+            <input class="plans-step__choose-country plans-step__choose-country--full-width" type="text" placeholder="выберите страну" id="country3"/>
+            <input class="plans-step__choose-country plans-step__choose-country--full-width" type="text" placeholder="добавить страну" id="add-button" />
+            <a class="plans-step__some-step plans-step__some-step--backgroung" href="#plans-step3">следующий шаг</a>
+            <a class="plans-step__some-step plans-step__some-step--back" href="#plans-step1">на шаг назад</a>
           </div>
           <div class="plans-step plans-step--step3" id="plans-step3">
             <h3 class="plans-step__header">
@@ -281,23 +285,20 @@
               Можно писать в свободной форме и ставить тэги.
             </p>
             <div class="action-plan">
-              <p class="action-plan__country">Босния и Герцеговина</p>
-              <img class="bosnia-icon" src="https://placekitten.com/35/24" alt="country-flag" width="35" height="24">
-              <textarea class="action-plan__description" name="action-description" id="action-description1" cols="30"
-                rows="10" placeholder="План действий"></textarea>
+              <p class="action-plan__title">Босния и Герцегови</p>
+              <img class="action-plan__icon" src="https://placekitten.com/35/24" alt="country-flag" width="35" height="24">
+              <textarea class="action-plan__description" name="action-description" id="action-description1" placeholder="План действий"></textarea>
             </div>
             <div class="action-plan">
-              <p class="action-plan__country">Чехия</p>
-              <img class="czech-icon" src="https://placekitten.com/35/24" alt="country-flag" width="35" height="24">
-              <textarea class="action-plan__description" name="action-description" id="action-description2" cols="30"
-                rows="10">Пить пиво и лазить
-  по старым замкам,
-  наслаждаться архитектурой
-  и вот это все.
+              <p class="action-plan__title">Чехия</p>
+              <img class="action-plan__icon" src="https://placekitten.com/35/24" alt="country-flag" width="35" height="24">
+              <textarea class="action-plan__description" name="action-description" id="action-description2">Пить пиво и лазить
+по старым замкам, наслаждаться архитектурой
+и вот это все.
               </textarea>
             </div>
-            <button class="plans-step__submit" type="submit">Отправить</button>
-            <a class="plans-step__some-step plans-step__some-step--back" href="#plans-step2">НА ШАГ НАЗАД</a>
+            <button class="plans-step__some-step plans-step__submit" type="submit">отправить</button>
+            <a class="plans-step__some-step plans-step__some-step--back" href="#plans-step2">на шаг назад</a>
           </div>
         </form>
       </div>
