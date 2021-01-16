@@ -1,22 +1,26 @@
 .letters-table {
+  width: 219px;
+  height: 203px;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-top: 23px;
+  margin-bottom: 16px;
+  margin-left: 25px;
+  background-color: @white;
 }
 
 .letters-table__letter {
-  width: 43px;
-  height: 38px;
   border: 1px solid @grey-white;
-  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 18px;
+  font-weight: 500;
+  line-height: 14px;
   text-align: center;
   text-transform: uppercase;
   color: @basic-blue-light;
+  box-sizing: border-box;
 
   &--selected {
-    background-color: @basic-grey;
+    background-color: @basic-blue-light;
+    color: @white;
   }
 }

@@ -1,0 +1,20 @@
+.swipe-points {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swipe-points__item {
+  .make-circle(5px, @basic-blue-light);
+  margin-right: 16px;
+  opacity: 0.3;
+
+  &--active {
+    opacity: 1;
+  }
+
+  &--less-distance {
+    margin-right: 4px;
+    .make-circle(3px, @basic-blue-light);
+    opacity: 1;
+  }
+}

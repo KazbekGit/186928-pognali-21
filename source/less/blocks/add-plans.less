@@ -4,7 +4,7 @@
   margin-top: -25px;
   padding-top: 31px;
   padding-bottom: 68px;
-  border-radius: 30px;
+  .border-radius-all(30px, 30px, 0, 0);
   background-color: @grey-darken;
 }
 
@@ -16,17 +16,6 @@
   margin-bottom: 30px;
 }
 
-.add-plans__swipe-points {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.add-plans__swipe-point {
-  .make-circle(5px, @basic-blue-light);
-  margin-right: 16px;
-  opacity: 0.3;
-
-  &--active {
-    opacity: 1;
-  }
+.add-plans__title {
+  color: @basic-blue-light;
 }

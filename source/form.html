@@ -8,7 +8,7 @@
   <title>Направления</title>
 </head>
 
-<body class="body page__body">
+<body class="body">
   <header class="header">
     <div class="header__wrapper wrapper">
       <div class="logo-and-btn">
@@ -28,17 +28,17 @@
       <div class="wrapper profile-settings__wrapper">
         <div class="profile-settings__level-photo">
           <div class="mark-level-form">
-            <svg class="mark-level__progress-circle" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="mark-level-form__progress-circle" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M5.76698 26.6667C2.08488 33.6324 0 41.5727 0 50C0 77.6142 22.3858 100 50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0V3C75.9574 3 97 24.0426 97 50C97 75.9574 75.9574 97 50 97C24.0426 97 3 75.9574 3 50C3 41.508 5.25217 33.5419 9.19181 26.6667H5.76698Z" fill="#FF8D30"/>
             </svg>
             <span class="mark-level-form__progress-value" data-level-value="80">80</span>
             <span class="mark-level-form__progress-name">level</span>
           </div>
           <div class="user-card">
-            <img class="user-card__photo user-card__photo--rounded" src="https://placekitten.com/270/270" alt="User photo" width="100" height="100" />
+            <img class="user-card__photo user-card__photo--round" src="https://placekitten.com/270/270" alt="User photo" width="100" height="100" />
           </div>
         </div>
-        <button class="form-page-btn form-page-btn--change-photo">СМЕНИТЬ ФОТО</button>
+        <button class="form-page-btn form-page-btn--change-photo">сменить фото</button>
         <div class="tags">
           <h3 class="tags__header">ТЭГИ</h3>
           <textarea class="tags__user-tags" name="user-tags" id="user-tags">#бургер #бар #футбол #концерт #крафт
@@ -66,19 +66,19 @@
             <span class="plans-card__travel-begin">26 МАР</span> —
             <span class="plans-card__travel-end"></span>29 МАР
           </p>
-          <a class="plans-card__change" href="plans.html" title="Изменить планы">ИЗМЕНИТЬ</a>
+          <a class="plans-card__change" href="plans.html" title="Изменить планы">изменить</a>
         </div>
         <div class="plans-card">
           <p class="plans-card__header">2.Таиланд,Индонезия</p>
           <p class="plans-card__companion">
             <span class="plans-card__companion-num" data-companion-num="1">1</span>
-            ПОПУТЧИК
+            попутчик
           </p>
           <p class="plans-card__travel-date">
-            <span class="plans-card__travel-begin">1 ИЮЛ</span> —
-            <span class="plans-card__travel-end"></span>15 ИЮЛ
+            <span class="plans-card__travel-begin">1 июл</span> —
+            <span class="plans-card__travel-end"></span>15 июл
           </p>
-          <a class="plans-card__change" href="plans.html" title="Изменить планы">ИЗМЕНИТЬ</a>
+          <a class="plans-card__change" href="plans.html" title="Изменить планы">изменить</a>
         </div>
       </div>
     </section>
@@ -87,10 +87,10 @@
         <form class="add-plans__form" action="https://echo.htmlacademy.ru" method="POST" id="add-plans-form">
           <div class="add-plans__header">
             <h2 class="add-plans__title">Добавить план:</h2>
-            <div class="add-plans__swipe-points">
-              <div class="add-plans__swipe-point add-plans__swipe-point--active"></div>
-              <div class="add-plans__swipe-point"></div>
-              <div class="add-plans__swipe-point"></div>
+            <div class="swipe-points">
+              <div class="swipe-points__item swipe-points__item--active"></div>
+              <div class="swipe-points__item"></div>
+              <div class="swipe-points__item"></div>
             </div>
           </div>
           <div class="plans-step plans-step--step1" id="plans-step1">
@@ -104,7 +104,7 @@
             </p>
             <div class="plans-step__companion-duration">
               <p class="plans-step__subtitle">
-                ИЩУ ПОПУТЧИКОВ:
+                ищу попутчиков:
               <span class="plans-step__companion-item"> ЧЕЛ.</span>
               </p>
               <div class="plans-step__companion">
@@ -113,7 +113,7 @@
                 <div class="plans-step__companion-minus"></div>
               </div>
               <p class="plans-step__subtitle">
-                ДЛИТЕЛЬНОСТЬ:<span> ДН.</span>
+                длительность:<span> дн.</span>
               </p>
               <div class="plans-step__duration">
                 <input type="number" class="plans-step__num" value="3" data-duration-num="3" />
