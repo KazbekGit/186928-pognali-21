@@ -6,9 +6,18 @@
   padding: 0;
   background-color: white;
   .border-radius-all(25px, 25px, 0, 0);
+  margin-top: -80px;
   padding-bottom: 19px;
-  z-index: @footer-form-z;
-  margin-top: -25px;
+
+  &--form {
+    z-index: @footer-form-z;
+    margin-top: -25px;
+  }
+
+  &--catalog {
+    z-index: @footer-catalog-z;
+    margin-top: 46px;
+  }
 }
 
 .footer__wrapper {
@@ -35,9 +44,7 @@
 }
 
 .footer__author-text {
-  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 16px;
 }

@@ -8,6 +8,13 @@
   &:last-of-type {
     margin-bottom: 20px;
   }
+
+  &--catalog {
+    justify-content: flex-start;
+    background-color: @white;
+    padding: 13px 20px 23px 25px;
+    border-radius: 20px;
+  }
 }
 
 .user-card__flags {
@@ -20,25 +27,25 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 
-  &--rounded {
+  &--round {
     border-radius: 50%;
+    margin-left: -6px;
   }
 }
 
 .user-card__info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 27px 36px 16px 42px;
+  justify-content: center;
+  padding-top: 27px;
+  padding-bottom: 16px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: white;
 }
 
-.user-card__user-name {
+.user-card__name {
   width: inherit;
-  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
@@ -70,26 +77,32 @@
       margin-right: 10px;
     }
   }
+
+  &--column {
+    margin-left: 15px;
+  }
 }
 
-.user-card__user-hobbies {
+.user-card__hobbies {
   width: 188px;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 14px;
-  font-family: "Blogger Sans", "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
-  font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   color: @special-grey;
+
+  &--align {
+    text-align: left;
+  }
 }
 
-.user-card__transport {
+.user-card__transport-list {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
-  margin-left: 35px;
+  margin-bottom: 22px;
 }
 
 .user-card__transport-item {
@@ -102,4 +115,40 @@
   &--active {
     fill: @blue-lighter;
   }
+}
+
+.user-card__countries-to-visit {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 16px;
+  color: @basic-blue-light;
+  margin-bottom: 5px;
+}
+
+.user-card__country-to-visit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: flex-start;
+  margin-bottom: 12px;
+
+  &:last-of-type {
+    margin-bottom: 7px;
+  }
+}
+
+.user-card__country-name {
+  margin-left: 14px;
+}
+
+.user-card__block-title {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: @special-grey;
 }
