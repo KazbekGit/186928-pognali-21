@@ -13,9 +13,19 @@
     position: absolute;
     top: 0;
     left: 0;
+
+    @media (min-width: @tablet-width){
+      display: none;
+    }
   }
 
   &--closed-modal {
     display: none;
+  }
+
+  &--tablet {
+    @media (max-width: @tablet-width) {
+      display: none;
+    }
   }
 }

@@ -1,8 +1,25 @@
 .promo {
+  width: @mobile-width;
+  margin: 0 auto;
   position: relative;
   padding-top: 13px;
   background: url("../img/traveller.png") top 129px center / 192px 255px no-repeat, url("../img/promo-bg.jpg") top center / 320px 384px no-repeat, url("../img/promo-bg-blue.png") top 384px center /320px 285px no-repeat, url("../img/promo-bg-darkblue.png") top 669px center /320px 278px no-repeat;
   z-index: @promo-z;
+  background-color: @darker-blue;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+}
+
+.promo__wrapper {
+  @media (min-width: @tablet-width) {
+    width: @wrapper-tablet;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
 }
 
 .promo__header {
@@ -15,6 +32,14 @@
   color: @white;
   margin-bottom: 243px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 86px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
 
 .promo__phone-icon {
@@ -31,6 +56,10 @@
   padding: 0;
   margin: 0;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .promo__quote {
@@ -50,10 +79,13 @@
   color: @white;
   margin-left: 27px;
   margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 211px;
+  }
 }
 
 .promo__list {
-  width: inherit;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -63,6 +95,11 @@
   line-height: 18px;
   color: @darker-blue;
   counter-reset: promo-num;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .promo__list-item {
@@ -76,6 +113,10 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: @special-orange;
+
+    @media (min-width: @tablet-width) {
+      .border-radius-all(0, 20px, 0, 0);
+    }
   }
 
   &--2 {
@@ -83,6 +124,10 @@
     border-top-right-radius: 10px;
     margin-top: -8px;
     background-color: @yellow;
+
+    @media (min-width: @tablet-width) {
+      .border-radius-all(20px, 0, 0, 0);
+    }
   }
 
   &--3 {
@@ -90,6 +135,10 @@
     border-top-right-radius: 10px;
     margin-top: -8px;
     background-color: @special-yellow-dark;
+
+    @media (min-width: @tablet-width) {
+      .border-radius-all(0, 0, 0);
+    }
   }
 
   &--4 {
@@ -97,6 +146,23 @@
     margin-top: -8px;
     padding-bottom: 23px;
     background-color: @orange-basic;
+
+    @media (min-width: @tablet-width) {
+      .border-radius-all(0, 0, 20px, 0);
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 140px;
+    margin-top: 0;
+    width: 365px;
+  }
+
+  &:nth-child(2n) {
+    @media (min-width: @tablet-width) {
+      width: 338px;
+      margin-left: -15px;
+    }
   }
 }
 
