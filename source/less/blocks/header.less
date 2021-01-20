@@ -2,12 +2,17 @@
   position: relative;
   width: @mobile-width;
   margin: 0;
-  padding: 19px 25px 52px 25px;
-  background-color: @dark-blue;
+  padding: 29px 25px 52px 25px;
+  background-color: @darker-blue;
   box-sizing: border-box;
 
-  &--bg-color {
-    background-color: @darker-blue;
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
+
+
+  &--opened-modal {
+    background-color: @white;
   }
 }
 

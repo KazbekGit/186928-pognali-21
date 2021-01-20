@@ -111,22 +111,32 @@
         </header>
         <section class="filter__section filter__section--closed">
           <h2 class="visually-hidden">Хобби</h2>
-          <p class="filter__section-header">ХОББИ</p>
+          <p class="filter__section-header">хобби</p>
+          <ul class="filter__section-checkboxes filter__section-checkboxes--rolled-up visually-hidden">
+            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="heavy-rock" checked><label>Спортзал</label></li>
+            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="russian-rap"><label>Кальян</label></li>
+            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="euro-dance"><label>Диван</label></li>
+          </ul>
         </section>
         <section class="filter__section filter__section--opened">
           <h2 class="visually-hidden">Музыка</h2>
           <p class="filter__section-header">музыка</p>
           <ul class="filter__section-checkboxes">
-            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="heavy-rock" checked><span>Тяжелый
-              рок</span></li>
-            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="russian-rap" checked><span>Русский
-              рэп</span></li>
-            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="euro-dance"><span>Евроденс</span></li>
+            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="heavy-rock" checked><label>Тяжелый
+              рок</label></li>
+            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="russian-rap" checked><label>Русский
+              рэп</label></li>
+            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="euro-dance"><label>Евроденс</label></li>
           </ul>
         </section>
         <section class="filter__section filter__section--closed">
           <h2 class="visually-hidden">Еда</h2>
-          <p class="filter__section-header">ЕДА</p>
+          <p class="filter__section-header">еда</p>
+          <ul class="filter__section-checkboxes filter__section-checkboxes--rolled-up">
+            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="heavy-rock" checked><label>Мясоед</label></li>
+            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="russian-rap"><label>Сидит на ПП</label></li>
+            <li class="filter__section-item"><input class="filter__checkbox" type="checkbox" name="euro-dance"><label>Веган-сыроед</label></li>
+          </ul>
         </section>
         <section class="filter__section filter__section--opened">
           <h3 class="visually-hidden">транспорт</h3>
@@ -140,14 +150,20 @@
         </section>
         <section class="filter__section filter__section--opened">
           <h2 class="visually-hidden">Левел</h2>
-          <p class="filter__section-header">ЛЕВЕЛ</p>
-          <input class="filter__section-min" type="number" value="30" min="0" max="100">
-          <input class="filter__section-max" type="number" value="100" min="0" max="100">
-          <div class="filter__slider">
-            <div>
+          <p class="filter__section-header">левел</p>
+          <div class="filter__section-levels">
+            <input class="filter__section-min" type="number" value="30" min="0" max="100">
+            <input class="filter__section-max" type="number" value="100" min="0" max="100">
+          </div>
+          <div class="slider-block">
+            <div class="slider-block__slider">
+              <div class="slider-block__track">
+                <div class="slider-block__thumb slider-block__thumb--left"></div>
+                <div class="slider-block__thumb slider-block__thumb--right"></div>
+              </div>
+
             </div>
-            <div>
-            </div>
+
           </div>
         </section>
         <button class="button button--oval" type="submit">показать</button>

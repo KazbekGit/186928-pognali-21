@@ -1,6 +1,21 @@
 .logo-and-btn {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: inherit;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo-and-btn__logo {
+  &--opened-modal {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &--closed-modal {
+    display: none;
+  }
 }

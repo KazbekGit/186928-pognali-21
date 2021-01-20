@@ -26,6 +26,10 @@
   color: @basic-blue-light;
 }
 
+.filter__section-header {
+  text-transform: uppercase;
+}
+
 .filter__section-checkboxes {
   list-style: none;
   margin-top: 13px;
@@ -54,6 +58,32 @@
 .filter__checkboxes {
   margin-top: 19px;
   margin-bottom: 19px;
+}
+
+.filter__section-levels {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter__section-min,
+.filter__section-max {
+  box-sizing: border-box;
+  padding: 13px 15px 8px 15px;
+  width: 50%;
+  text-align: center;
+  border: 1px solid @grey-solid;
+}
+
+.filter__section-min {
+  .border-radius-all(0,5px,0,5px);
+  margin-right: -1px;
+}
+
+.filter__section-max {
+  .border-radius-all(5px,0,5px,0);
+  margin-left: -1px;
 }
 
 .filter__slider {
